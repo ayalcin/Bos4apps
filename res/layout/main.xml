@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01" 
+android:orientation="vertical"
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent" 
+android:background="#ffffff"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout android:layout_width="fill_parent" 
+android:id="@+id/RelativeLayout01" 
+android:layout_height="30px">
+
+	<RelativeLayout android:layout_width="fill_parent" 
+	android:id="@+id/RelativeLayout02" 
+	android:layout_height="30px">
+		<TextView android:text="Suche" 
+		android:layout_width="fill_parent" 
+		android:layout_height="30px"
+		android:textSize="6pt"
+		android:textColor="#08325e"
+		android:textStyle="bold"
+		android:gravity="center" 
+		android:background="#e9f1f9"
+		android:id="@+id/TextView01">
+		</TextView>
+	</RelativeLayout>
+	<RelativeLayout 
+	android:layout_width="fill_parent"
+	android:id="@+id/RelativeLayout03" 
+	android:gravity="right"
+	android:layout_height="fill_parent">
+		<Button
+        android:id="@+id/settings"
+        android:layout_width="44px"
+        android:layout_height="25px"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="3dip"
+        android:gravity="center_vertical"	
+        android:background="@drawable/settings_button" />
+	</RelativeLayout>
+	
+</RelativeLayout>
+<RelativeLayout android:layout_width="fill_parent" 
+	android:id="@+id/RelativeLayout04" 
+	android:layout_height="30px"
+	android:layout_below="@+id/RelativeLayout02">
+		<EditText
+	        android:id="@+id/entry"
+	        android:layout_width="185px"
+	        android:layout_marginTop="5dip"
+	        android:layout_marginLeft="5dip"
+	        android:layout_height="wrap_content"
+	        android:background="@android:drawable/editbox_background" 
+	        android:text="Ihr aktueller Ort" 
+	        android:textColor="#333333" 
+	        android:gravity="center"
+	        android:textSize="6pt" 
+	        android:shadowColor="#e9f1f9"/>
+        <Button
+        android:id="@+id/location"
+        android:layout_width="38px"
+        android:layout_height="23px"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center_vertical"	
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/location_button" />
+</RelativeLayout>
+<RelativeLayout android:layout_width="fill_parent" 
+	android:id="@+id/RelativeLayout04" 
+	android:layout_height="30px"
+	android:layout_below="@+id/RelativeLayout02">
+	
+	<SeekBar android:layout_alignParentBottom="true" 
+	android:layout_width="fill_parent" 
+	android:id="@+id/SeekBar01" 
+	android:layout_height="wrap_content">
+</SeekBar>
+</RelativeLayout>
+</LinearLayout>
